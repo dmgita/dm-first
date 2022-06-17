@@ -1,22 +1,14 @@
 import requests
-
 # from bs4 import BeautifulSoup as bs
 # import pandas as pd
-
-
-URL_TEMPLATE = 'https://www.kinopoisk.ru/film/84008/'
-# URL_TEMPLATE = "https://incanto.eu/catalog/byustgaltery_i_trusy/"
-
-
-# FILE_NAME = "test.csv"
+URL_TEMPLATE = "https://incanto.eu/catalog/byustgaltery_i_trusy/"
 
 def parse(url=URL_TEMPLATE):
-    #     result_list = {'href': [], 'title': [], 'about': []}
 
-    r = requests.get(url)
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.160 YaBrowser/22.5.2.612 Yowser/2.5 Safari/537.36'}
+    r = requests.get(url, headers=headers)
     print(r.status_code)
     print(r.text)
-
 
 #     soup = bs(r.text, "html.parser")
 #     vacancies_names = soup.find_all('h2', class_='add-bottom-sm')
@@ -28,10 +20,4 @@ def parse(url=URL_TEMPLATE):
 #         result_list['about'].append(info.text)
 #     return result_list
 
-
-# df = pd.DataFrame(
-
-# data=
 parse()
-# )
-# df.to_csv(FILE_NAME)
