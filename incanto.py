@@ -5,7 +5,7 @@ import time
 
 URL_TEMPLATE = "https://incanto.eu/catalog/byustgaltery_i_trusy/byustgaltery_bez_kostochek/byustgalter_s_treugolnymi_formovannymi_chashkami_bez_kostochek_na_peremychke_angelica/"
 # URL_TEMPLATE = 'https://incanto.eu/catalog/byustgaltery_i_trusy/byustgaltery_push_up/byustgalter_push_up_s_formovannymi_chashkami_na_stane_sebbin/?option=4186180756'
-bot = telebot.TeleBot ( "5343720689:AAGj_7YiqKb5wpmiFEPap9pzAJeSCUVaa-o" )
+bot = telebot.TeleBot ( "НОМЕР БОТА" )
  
 def parse(url=URL_TEMPLATE):
 
