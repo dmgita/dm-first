@@ -2,6 +2,7 @@ import telebot
 
 bot = telebot.TeleBot ( "5343720689:AAGj_7YiqKb5wpmiFEPap9pzAJeSCUVaa-o" )
 
+
 bot.send_message('250690401', 'У меня есть всё что нужно')
 
 # # Handle '/start' and '/help'
